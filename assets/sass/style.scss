@@ -1,0 +1,413 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Concert One', cursive;
+  font-size: 1.5rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-style: none;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menu {
+      .menu-bar {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        padding: 2rem;
+
+        li {
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            margin-right: 1rem;
+          }
+          #item-1{
+            &::before{
+              display: none;
+              position: relative;
+              content: "";
+              border: 1.5px solid #FFCD59;
+              top: 2rem;
+              width:0;
+
+
+              @keyframes line{
+                0%{width: 0;}
+                100%{width: 4.5rem;}
+              }
+            }
+          }
+            #item-1{
+            &:hover  {
+            &::before    {
+              display: block;
+                animation-name:line;
+                animation-duration:1.5s;
+                animation-iteration-count:1 ease;
+                animation-fill-mode: forwards;
+              }
+            }
+          }
+          #item-2{
+            &::before{
+              display: none;
+              position: relative;
+              content: "";
+              border: 1.5px solid #FFCD59;
+              top: 2rem;
+              width:0rem;
+
+              @keyframes line-2{
+                0%{width: 0;}
+                100%{width: 8rem;}
+              }
+            }
+          }
+          #item-2{
+          &:hover  {
+          &::before    {
+            display: block;
+              animation-name:line-2;
+              animation-duration:2s;
+              animation-iteration-count:1 ease;
+              animation-fill-mode: forwards;
+            }
+          }
+        }
+          #item-3{
+            &::before{
+              display: none;
+              position: relative;
+              content: "";
+              border: 1.5px solid #FFCD59;
+              top: 2rem;
+              width: 0rem;
+              @keyframes line-3{
+                0%{width: 0;}
+                100%{width: 10.2rem;}
+              }
+            }
+          }
+          #item-3{
+          &:hover  {
+          &::before    {
+            display: block;
+              animation-name:line-3;
+              animation-duration:2s;
+              animation-iteration-count:1 ease;
+              animation-fill-mode: forwards;
+            }
+          }
+        }
+          #item-4{
+            &::before{
+              // display: block;
+              position: relative;
+              content: "";
+              border: 1.5px solid #FFCD59;
+              top: 2rem;
+              width: 0rem;
+              display: none;
+
+              @keyframes line-4{
+                0%{width: 0;}
+                100%{width: 7.5rem;}
+              }
+            }
+          }
+          #item-4{
+            &:hover{
+              &::before{
+                display: block;
+                animation-name: line-4;
+                animation-duration: 1.4s;
+                animation-iteration-count: 1 ease;
+                animation-fill-mode: forwards;
+              }
+            }
+          }
+        }
+      }
+
+      .down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        a {
+          list-style: none;
+        }
+
+        .dropdown-menu-1 {
+          position: absolute;
+          top: 2rem;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          display: none;
+          left:-22rem;
+          animation-duration: 2s;
+          animation-name: drop-one;
+          animation-iteration-count: 1 ease-in-out;
+          text-decoration: none;
+          list-style: none;
+
+          @keyframes drop-one{
+            0%{left:-50rem;}
+            100%{left: -22rem;}
+          }
+
+          li {
+            margin-top: 1.5rem;
+            width: 50rem;
+            height: 2rem;
+            a {
+
+            }
+            #drop-1{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 17rem;
+
+              @keyframes drop-1{
+                0%{width: 0rem;}
+                100%{width: 16rem;}
+               }
+              }
+            }
+            #drop-1{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-1;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+            #drop-2{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 16.7rem;
+
+              @keyframes drop-2{
+                0%{width: 0rem;}
+                100%{width: 17rem;}
+               }
+              }
+            }
+            #drop-2{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-2;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+            #drop-3{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 15.5rem;
+
+              @keyframes drop-3{
+                0%{width: 0rem;}
+                100%{width: 19rem;}
+               }
+              }
+            }
+            #drop-3{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-3;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+            #drop-4{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 20rem;
+
+              @keyframes drop-4{
+                0%{width: 0rem;}
+                100%{width: 10rem;}
+               }
+              }
+            }
+            #drop-4{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-4;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+          }
+        }
+        &:hover{
+          .dropdown-menu-1{
+            display: block;
+          }
+        }
+      }
+
+      .down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+
+        .dropdown-menu-2 {
+          // display: none;
+          position: absolute;
+          top: 2.5rem;
+          left: -1.5rem;
+          display: flex;
+          flex-direction: column;
+          display: none;
+          animation-duration: 2s;
+          animation-name: move;
+          animation-iteration-count: 1 ease-in-out;
+          text-decoration: none;
+          list-style: none;
+
+          @keyframes move{
+            0%{left:-50rem;}
+            100%{left: -1.5rem;}
+          }
+          li {
+            margin-top: 1rem;
+            height: 2rem;
+
+            a {
+            }
+            #drop-5{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 2px;
+
+              @keyframes drop-5{
+                0%{width: 2px;}
+                100%{width: 6rem;}
+               }
+              }
+            }
+            #drop-5{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-5;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+            #drop-6{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 7px;
+
+              @keyframes drop-6{
+                0%{width: 2px;}
+                100%{width: 6rem;}
+               }
+              }
+            }
+            #drop-6{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-6;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+            #drop-7{
+              &::after{
+              content: "";
+              position: relative;
+              border: 1.5px solid #FFCD59;
+              width: 0;
+              display: none;
+              left: 5px;
+
+              @keyframes drop-7{
+                0%{width: 2px;}
+                100%{width: 6rem;}
+               }
+              }
+            }
+            #drop-7{
+              &:hover{
+                &::after{
+                  display: block;
+                  animation-name: drop-7;
+                  animation-fill-mode: forwards;
+                  animation-duration: 2s;
+                  animation-iteration-count: 1s ease;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .dropdown-menu-2 {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
