@@ -36,11 +36,12 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
           #item-1{
             &::before{
               display: none;
-              position: relative;
+              position: absolute;
               content: "";
               border: 1.5px solid #FFCD59;
-              top: 2rem;
+              top: 30.7rem;
               width:0;
+
 
 
               @keyframes line{
@@ -63,10 +64,10 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
           #item-2{
             &::before{
               display: none;
-              position: relative;
+              position: absolute;
               content: "";
               border: 1.5px solid #FFCD59;
-              top: 2rem;
+              top: 30.7rem;
               width:0rem;
 
               @keyframes line-2{
@@ -89,10 +90,10 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
           #item-3{
             &::before{
               display: none;
-              position: relative;
+              position: absolute;
               content: "";
               border: 1.5px solid #FFCD59;
-              top: 2rem;
+              top: 2.1rem;
               width: 0rem;
               @keyframes line-3{
                 0%{width: 0;}
@@ -114,7 +115,7 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
           #item-4{
             &::before{
               // display: block;
-              position: relative;
+              position: absolute;
               content: "";
               border: 1.5px solid #FFCD59;
               top: 2rem;
@@ -159,7 +160,7 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
           flex-direction: column;
           display: none;
           left:-22rem;
-          animation-duration: 2s;
+          animation-duration: 1.5s;
           animation-name: drop-one;
           animation-iteration-count: 1 ease-in-out;
           text-decoration: none;
@@ -178,17 +179,18 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
 
             }
             #drop-1{
+              font-size: 1.3rem;
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 17rem;
+              left: 19.5rem;
 
               @keyframes drop-1{
                 0%{width: 0rem;}
-                100%{width: 16rem;}
+                100%{width: 15rem;}
                }
               }
             }
@@ -204,17 +206,18 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
               }
             }
             #drop-2{
+              font-size: 1.3rem;
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 16.7rem;
+              left: 19.2rem;
 
               @keyframes drop-2{
                 0%{width: 0rem;}
-                100%{width: 17rem;}
+                100%{width: 15.2rem;}
                }
               }
             }
@@ -230,17 +233,18 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
               }
             }
             #drop-3{
+              font-size: 1.3rem;
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 15.5rem;
+              left: 18.5rem;
 
               @keyframes drop-3{
                 0%{width: 0rem;}
-                100%{width: 19rem;}
+                100%{width: 17rem;}
                }
               }
             }
@@ -256,13 +260,14 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
               }
             }
             #drop-4{
+              font-size: 1.3rem;
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 20rem;
+              left: 22rem;
 
               @keyframes drop-4{
                 0%{width: 0rem;}
@@ -305,7 +310,7 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
           display: flex;
           flex-direction: column;
           display: none;
-          animation-duration: 2s;
+          animation-duration: 1.5s;
           animation-name: move;
           animation-iteration-count: 1 ease-in-out;
           text-decoration: none;
@@ -324,15 +329,15 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
             #drop-5{
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 2px;
+              left: 2rem;
 
               @keyframes drop-5{
-                0%{width: 2px;}
-                100%{width: 6rem;}
+                0%{width: 0;}
+                100%{width: 6.5rem;}
                }
               }
             }
@@ -350,14 +355,14 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
             #drop-6{
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 7px;
+              left: 2.4rem;
 
               @keyframes drop-6{
-                0%{width: 2px;}
+                0%{width: 0;}
                 100%{width: 6rem;}
                }
               }
@@ -376,15 +381,15 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
             #drop-7{
               &::after{
               content: "";
-              position: relative;
+              position: absolute;
               border: 1.5px solid #FFCD59;
               width: 0;
               display: none;
-              left: 5px;
+              left: 2.5rem;
 
               @keyframes drop-7{
-                0%{width: 2px;}
-                100%{width: 6rem;}
+                0%{width: 0;}
+                100%{width: 6.2rem;}
                }
               }
             }
@@ -410,4 +415,69 @@ background: linear-gradient(to right, rgb(51, 51, 51), rgb(221, 24, 24));  list-
       }
     }
   }
+}
+
+
+// >>>>>>>>>>>>>>>>>><<<RESPONSİVE <>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+@media screen and (min-width:1537px) and (max-width:1920px){
+  body{
+  .navbar{
+    .menu{
+      .menu-bar{
+        li{
+          #item-1{
+            &::before{
+              top:30.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+ }
+}
+@media screen and (max-width:1538px){
+  body{
+  .navbar{
+    .menu{
+      .menu-bar{
+        li{
+          #item-1{
+            &::before{
+              top:23.7rem;
+            }
+          }
+          #item-2{
+            &::before{
+              top:23.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+ }
+}
+
+@media screen and (min-device-width:320px) and (max-device-width:800px){
+  body{
+  .navbar{
+    .menu{
+      .menu-bar{
+        li{
+          #item-1{
+            &::before{
+              top: 55.3rem;
+            }
+          }
+          #item-2{
+            &::before{
+    top: 55.3rem;            }
+          }
+        }
+      }
+    }
+  }
+ }
 }
